@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "tw": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+        "tw": "npx tailwindcss -i ./views/input.css -o ./views/output.css --watch"
     },
     "devDependencies": {
         "daisyui": "^4.11.1",
@@ -11,6 +11,7 @@
         "animate.css": "^4.1.1",
         "boxicons": "^2.1.4",
         "jquery": "^3.7.1",
-        "jquery-ui": "^1.13.3"
+        "jquery-ui": "^1.13.3",
+        "lucide": "^0.396.0"
     }
 }

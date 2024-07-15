@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#lgnForm').submit(function (e) { 
         e.preventDefault();
-        var url = 'php/login.php';
+        var url = '../src/landing/php/login.php';
         var data = $(this).serialize();
         $.post(url, data,function (response) {
             if(response.scs){

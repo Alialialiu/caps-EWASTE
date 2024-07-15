@@ -22,7 +22,7 @@ if ($result->num_rows === 1) {
         if ($usrTyp === 1) {
             $response = [
                 'scs' => True,
-                'redirect' => '../admin/index.php',
+                'redirect' => '../views/adminDashboard.php',
                 'msg' => 'Loging In..'
             ];
         }
