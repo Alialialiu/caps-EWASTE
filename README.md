@@ -1,3 +1,2 @@
 # sproj-EWASTE
-This is for
-Admin Management Only
+TechRecycle: Inventory Intelligence for Electronic Waste Management
