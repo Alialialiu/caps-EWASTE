@@ -32,10 +32,10 @@ if ($result) {
     $recentDonators = [];
 }
 ?>
-<div class="w-[50%] h-full shadow-md card rounded-md bg-[#F2FFFC]">
-    <div class=" flex gap-1 ">
+<div class="w-[50%] h-full shadow-md card rounded-md bg-bgbox">
+    <div class=" flex gap-1 items-center ">
         <div class="font-popin p-1 font-light text-[15px]">Recent Donators</div>
-        <i data-lucide="history" class="w-6 h-6 text-[#46E84B]"></i>
+        <i data-lucide="history" class="w-6 h-6 text-bgtext"></i>
     </div>
     <div class="overflow-x-auto">
         <table class="table table-xs">

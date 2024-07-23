@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(document).on('click','.btnItem', function(e){
         e.preventDefault();
-        var url = 'components/dialogs/dialogs.php';
+        var url = '../src/admin/components/dialogs/dialogs.php';
         var dataId = $(this).attr("id");
         $.post(url, {getId : dataId},
             function (response) {
@@ -18,12 +18,12 @@ $(document).ready(function() {
                   $('#modalTableDnt').html(response);
             });
     });
-
+// this is for dropdown
     $('.menu-dropdown-toggle').click(function() {
       $(this).toggleClass('menu-dropdown-show');
       $(this).next('.menu-dropdown').toggleClass('menu-dropdown-show');
     });
-
+// this is for add ewaste
     $("#formSaveItem").submit(function(e) {
         e.preventDefault();
         var url = 'php/addEwaste.php';
@@ -32,6 +32,7 @@ $(document).ready(function() {
                 alert(response.msg);
             });
     });
+// this is alert to a user input for adding ewaste
     function checkInputs() {
         const user = $('#searchInput').val().trim();
         const category = $('#category').val();
@@ -67,8 +68,7 @@ $(document).ready(function() {
         checkInputs();
         updatePreview();
     });
-
-    
+// this is for adding Categories
     $("#formSaveCty").submit(function(e) {
         e.preventDefault();
         var url = 'php/addCty.php';
@@ -90,11 +90,11 @@ $(document).ready(function() {
             }
         }, 'json');
     });
-
+// this is for auto complete
     $('#searchInput').autocomplete({
             source: function(request, response) {
                 $.ajax({
-                    url: 'php/dataSearch.php', // Change this to the PHP file that handles the search
+                    url: '../src/admin/php/dataSearch.php', // Change this to the PHP file that handles the search
                     dataType: 'json',
                     data: {
                         term: request.term
